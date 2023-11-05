@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+        <div class="container">
+            <div>
+                <h3 class='titles'>HOME</h3> 
+            <div class="score-container">
+                <h1 id="home-score"> 0 </h1>
+            </div>
+              <button class='button-design'
+              onclick="addOneToHomeScore()"
+               id='home-1-btn' > +1 </button> <button class='button-design' onclick='addTwoToHomeScore()'> +2 </button>
+                <button class='button-design' onclick='addThreeToHomeScore()'> +3 </button>
+               </div>
+             <div>
+                <h3 class='titles'>GUEST</h3> 
+            <div class="score-container">
+                <h1 id="guest-score"> 0 </h1>
+            </div>
+                  <button class='button-design'
+                  onclick='addOneGuest()'> +1 </button> <button class='button-design' onclick='addTwoGuest()'> +2 </button> <button class='button-design' onclick='addThreeGuest()'> +3 </button>
+              </div>
+          </div>
+                <div class="reset-container">
+           <button class="reset-button" onclick="resetButton()"> RESET </button>
+           </div>
+        <script src="index.js"></script>
+    </body>
+</html>
